@@ -1,0 +1,13 @@
+{
+  "name": "js-mini-api",
+  "version": "1.0.0",
+  "description": "Zero-dependency JSON REST API with plain Node.js http module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}
