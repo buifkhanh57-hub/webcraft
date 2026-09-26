@@ -1,0 +1,28 @@
+:root {
+  --ink: #1f2937;
+  --muted: #6b7280;
+  --accent: #6366f1;
+  --bg: #f9fafb;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.6; }
+header { display: flex; justify-content: space-between; align-items: center; padding: 16px 24px; background: #fff; border-bottom: 1px solid #e5e7eb; }
+.brand { font-weight: 700; font-size: 20px; color: var(--accent); text-decoration: none; }
+nav { display: flex; gap: 16px; align-items: center; }
+nav a { color: var(--accent); text-decoration: none; }
+.who { color: var(--muted); }
+main { max-width: 720px; margin: 40px auto; padding: 0 24px; }
+footer { text-align: center; padding: 24px; color: #9ca3af; }
+.post-list { list-style: none; padding: 0; }
+.post-list li { background: #fff; border-radius: 12px; padding: 20px 24px; margin-bottom: 16px; box-shadow: 0 4px 14px rgba(0,0,0,.05); }
+.post-list a { font-size: 20px; font-weight: 600; color: var(--ink); text-decoration: none; }
+.excerpt { margin: 8px 0 4px; color: var(--ink); }
+.meta { color: var(--muted); font-size: 13px; margin: 0; }
+.error { background: #fef2f2; border: 1px solid #fecaca; color: #b91c1c; padding: 10px 14px; border-radius: 8px; }
+.login-form { display: grid; gap: 12px; max-width: 320px; }
+.login-form label { display: grid; gap: 4px; font-size: 14px; }
+.login-form input { padding: 8px 10px; border: 1px solid #d1d5db; border-radius: 8px; }
+.login-form button { padding: 10px; border: 0; border-radius: 8px; background: var(--accent); color: #fff; font-weight: 600; cursor: pointer; }
+.hint { color: var(--muted); font-size: 13px; }
+.inline { display: inline; }
+button { font: inherit; }

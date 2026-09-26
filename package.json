@@ -1,13 +1,58 @@
 {
-  "name": "js-mini-api",
+  "name": "webcraft",
   "version": "1.0.0",
-  "description": "Zero-dependency JSON REST API with plain Node.js http module",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js"
+  "description": "A zero-dependency web framework for Node.js — router, middleware, sessions, templates, static serving, validation and more, built entirely on the Node.js standard library.",
+  "type": "module",
+  "main": "./lib/webcraft.js",
+  "exports": {
+    ".": "./lib/webcraft.js",
+    "./package.json": "./package.json"
   },
+  "bin": {
+    "webcraft": "./cli.js"
+  },
+  "files": [
+    "lib/",
+    "cli.js",
+    "examples/",
+    "tests/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test \"tests/*.test.js\"",
+    "start": "node examples/api-app.js",
+    "start:blog": "node examples/blog-app.js",
+    "example:api": "node examples/api-app.js",
+    "example:blog": "node examples/blog-app.js"
+  },
+  "keywords": [
+    "web",
+    "framework",
+    "http",
+    "router",
+    "middleware",
+    "zero-dependency",
+    "node",
+    "server",
+    "rest",
+    "templates",
+    "sessions"
+  ],
+  "author": {
+    "name": "Bui Bao Khanh",
+    "url": "https://github.com/buifkhanh57-hub"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buifkhanh57-hub/webcraft.git"
+  },
+  "bugs": {
+    "url": "https://github.com/buifkhanh57-hub/webcraft/issues"
+  },
+  "homepage": "https://github.com/buifkhanh57-hub/webcraft#readme",
   "engines": {
-    "node": ">=18"
+    "node": ">=18.0.0"
   },
   "license": "MIT"
 }

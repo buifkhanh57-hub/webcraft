@@ -1,0 +1,8 @@
+<article>
+  <h1>{{ post.title }}</h1>
+  <p class="meta">by {{ post.author }} · {{ post.date }}</p>
+  {{#each post.bodySplit}}
+  <p>{{ this }}</p>
+  {{/each}}
+  <p><a href="/">&larr; All posts</a></p>
+</article>
